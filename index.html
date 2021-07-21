@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myclock</title>
+
+    <style>
+        .clock {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: #D9BBA0 10px solid;
+            background-color: #73564C;
+        }
+        .clockcenter{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            top: calc((600px - 30px) / 2);
+            left: calc((600px - 30px) / 2);
+            z-index: 99;
+        }
+        .hand {
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 300px;
+            top: 300px;
+        }
+        .sec-hand {
+            position: absolute;
+            width: 4px;
+            height: 280px;
+            border-radius: 2px;
+            background-color: #F2E3D5;
+            left: -2px;
+            top: -278px;
+        }
+        .min-hand{
+            position: absolute;
+            width: 6px;
+            height: 200px;
+            border-radius: 2px;
+            background-color: #F2E3D5;
+            left: -3px;
+            top: -197px;
+        }
+        .hour-hand{
+            position: absolute;
+            width: 10px;
+            height: 120px;
+            border-radius: 2px;
+            background-color: #F2E3D5;
+            left: -5px;
+            top: -117px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+
+<div class="clock">
+    <div class="clockcenter"></div>
+    <div class="hand secHand">
+        <div class="sec-hand"></div>
+    </div>
+    <div class="hand minHand">
+        <div class="min-hand"></div>
+    </div>
+    <div class="hand hourHand">
+        <div class="hour-hand"></div>
+    </div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
